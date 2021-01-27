@@ -29,7 +29,7 @@ xhr.send()
 //função al_cap puxa (i= número de 1 a 12, objetoal = 12 localidades
 //requisição puxa api timezone + objetoal, para trazer informações específicas para as 12 localidades sorteadas 
 //(timezone na var local e utc_offset na var fz ex: +00:00 -03:00)
-//função addsec traz o formato do horário (melhor descrito abaixo)
+//função addsec traz o formato do horário e data (melhor descrito abaixo)
 //com o document.get coloca as informações nas divs criadas dentro dos cards já criados no html
 
 
@@ -64,6 +64,7 @@ function al_cap(i, objetoal) {
 //As var criadas para ano, mes, dia, h, m e s fazem um corte puxando valores de substring para corresponder a informação separada
 //Na Cdata é puxada uma new date com as informações do objeto tirando -1 do mês pois no objeto está no formato 1 a 12 e o formato new date é 0 a 11
 //função setInterval estabelece o formato de apresentação das informações para serem colocados nas divs
+//Ao puxar os dados para entregar no formato MM/DD/YYYY volta a adicionar +1 no month
 
 
 function addsec(objeto, i) {

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link id="pagestyle" rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Consumo da World Time API</title>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .demo-card-wide {
+            padding: 10px;
+            margin: auto;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+    <div class="mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--scroll">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <a href="index.html">
+                    <img style="cursor: pointer;"
+                        src="https://faculdadeiv2.com.br/img/new/home-split/logo-extenso-branco.png" width="200">
+                </a>
+                <!-- Navigation -->
+                <nav class="mdl-navigation" style="transform: translateX(600px);">
+                    <a class="mdl-navigation__link" href="index.html">Página Inicial</a>
+                    <a class="mdl-navigation__link" href="Ip.html">Consulta por IP</a>
+                    <a class="mdl-navigation__link" href="local.html">Consulta por Local</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- main -->
+        
+        <div id="hip" class="demo-card-wide mdl-card mdl-shadow--2dp"></div>
+
+        <!-- footer -->
+        <footer class="mdl-mini-footer" style="z-index: 1000; position: absolute; bottom: 0; width: 100%; display:inline">
+            <div>
+                <div class="mdl-mini-footer__left-section">
+                    <ul class="mdl-mini-footer__link-list" style="width: 100%;">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="#" style="margin-left: 1075px;">Este Site não Utiliza Cookies</a></li>
+                    </ul>
+                </div>
+        </footer>
+    </div>
+    <script src="ip.js"></script>
+</body>
+
+</html>
