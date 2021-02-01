@@ -30,6 +30,18 @@
             font-family: 'Poppins', sans-serif;
             font-size: 1.2em;
         }
+
+        .active, .mdl-navigation__link:hover {
+            color: white !important;
+            border-bottom: 5px solid rgb(59, 135, 170);
+            margin-bottom: 5px;
+            transition: all 0.3s ease;  
+            
+        }
+
+
+
+
     </style>
 </head>
 
@@ -42,13 +54,13 @@
                 <!-- Title -->
                 <a href="index.html">
                     <img style="cursor: pointer;"
-                        src="/Images/capybara-banner.png" width="115">
+                        src="Images\capybara-banner.png" width="115">
                 </a>
                 <!-- Navigation -->
                 <nav class="mdl-navigation" style="transform: translateX(600px);">
                     <a class="mdl-navigation__link" href="index.html">Página Inicial</a>
                     <a class="mdl-navigation__link" href="Ip.html">Consulta por IP</a>
-                    <a class="mdl-navigation__link" href="local.html">Consulta por Local</a>
+                    <a class="mdl-navigation__link active" href="local.html">Consulta por Local</a>
                 </nav>
             </div>
         </header>
@@ -60,8 +72,7 @@
             <div class="mySelec" style="margin-top: 15px;">
                 <select id="tzone" class="mdl-textfield__input"
                     style="width: 308px; margin-bottom: 40px; color: rgba(128, 128, 128, 0.5);">
-                    <option value="" disabled selected style="color: rgba(128, 128, 128, 0.4);">Selecione o
-                        um continente</option>
+                    <option value="" disabled selected style="color: rgba(128, 128, 128, 0.4);">Selecione um continente</option>
                     <option value="Africa"> Africa</option>
                     <option value="America">America </option>
                     <option value="Antarctica">Antarctica </option>
@@ -76,12 +87,15 @@
             <div class="mySelec">
                 <select id="reg" class="mdl-textfield__input"
                     style="width: 308px; margin-bottom: 40px; color: rgba(128, 128, 128, 0.5);">
-                    <option value="" disabled selected style="color: rgba(128, 128, 128, 0.4);">Selecione o
-                        uma região</option>
+                    <option value="" disabled selected style="color: rgba(128, 128, 128, 0.4);">Selecione uma região</option>
                 </select>
             </div>
 
             <div id="hora" class="mdl-textfield__title" align="center"></div>
+            
+            <div>
+                <progress id="progress" value="0"></progress>
+            </div>
 
         </div>
 

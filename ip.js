@@ -12,7 +12,7 @@ req.onreadystatechange = function () {
         addsec(objeto2.datetime)
         var ip = objeto2.client_ip
         var fz = objeto2.utc_offset
-        // console.log(objeto2)
+        console.log(objeto2)
 
         document.getElementById("hip").innerHTML += `<table id="tabela"><tr><td>${local}</td></tr>
                         <tr><td id="colunahip"></td></tr>
@@ -55,4 +55,15 @@ function addsec(objeto) {
 
     }, 1000)
 
+}
+
+
+var nav = document.getElementById("mdl-navigation");
+var links = nav.getElementsByClassName("mdl-navigation__link");
+for (var i = 0; i < btns.length; i++) {
+  links[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
 }

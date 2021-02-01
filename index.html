@@ -30,6 +30,16 @@
             font-family: 'Poppins', sans-serif;
             font-size: 1.2em;
         }
+
+        .active, .mdl-navigation__link:hover {        
+            color: white !important;
+            border-bottom: 5px solid rgb(59, 135, 170);
+            margin-bottom: 5px;
+            transition: all 0.3s ease;           
+            
+        }
+
+
     </style>
 </head>
 
@@ -42,11 +52,11 @@
                 <!-- Title -->
                 <a href="index.html">
                     <img style="cursor: pointer;"
-                        src="/Images/capybara-banner.png" width="115">
+                        src="Images\capybara-banner.png" width="115">
                 </a>
                 <!-- Navigation -->
                 <nav class="mdl-navigation" style="transform: translateX(600px);">
-                    <a class="mdl-navigation__link" href="index.html">Página Inicial</a>
+                    <a class="mdl-navigation__link active" href="index.html">Página Inicial</a>
                     <a class="mdl-navigation__link" href="Ip.html">Consulta por IP</a>
                     <a class="mdl-navigation__link" href="local.html">Consulta por Local</a>
                 </nav>

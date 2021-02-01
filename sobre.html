@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link id="pagestyle" rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Consumo da World Time API</title>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .demo-card-wide.mdl-card {
+            width: 400px;
+            
+            }
+        .demo-card-wide > .mdl-card__title {
+              padding: 10px;                  
+              margin: auto;
+              justify-content: center;
+              text-align: center;
+              
+              }
+        .demo-card-wide > .mdl-card__menu {
+            color: #fff;
+            }
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+    <div class="mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--scroll">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <a href="index.html">
+                    <img style="cursor: pointer;"
+                        src="Images\capybara-banner.png" width="115">
+                </a>
+                <!-- Navigation -->
+                <nav class="mdl-navigation" style="transform: translateX(600px);">
+                    <a class="mdl-navigation__link" href="index.html">Página Inicial</a>
+                    <a class="mdl-navigation__link" href="Ip.html">Consulta por IP</a>
+                    <a class="mdl-navigation__link" href="local.html">Consulta por Local</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- main -->
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp" style="align-items: center; margin: auto;">
+            <div class="mdl-card__title">
+                <img width="300" style= "margin-left: auto; margin-right: auto;" src="Images\chronos.jpg" alt="">
+            </div>
+            <div class="mdl-card__supporting-text"
+                style="color: black; text-align: justify; background-color: rgba(0,0,0,0.1);">
+                Consumo da World Time API retorna em sua página inicial 12 fusos de diferentes e aleatórios locais ao redor
+                do mundo. Oferecendo na página de consulta por Local a opção de selecionar o continente e localidade específica
+                para verificar o respectivo fuso. Na consulta por IP retorna o horário de acordo com o IP do dispositivo que está
+                consultando. <br><br>
+                "O tempo passa e um dia a gente aprende <br>
+                Hoje eu sei realmente o que faz a minha mente<br>
+                Eu vi o tempo passar e pouca coisa mudar <br>
+                Então tomei um caminho diferente..."
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a href="https://www.vagalume.com.br/charlie-brown-jr/senhor-do-tempo.html" target="_blank"
+                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="color: black;">
+                    Senhor do Tempo - Charlie Brown Jr.
+                </a>
+            </div>
+
+        </div>
+
+        
+
+        <!-- footer -->
+
+        <footer class="mdl-mini-footer" style="width: 100%; z-index: 1000; display:inline; position: absolute; bottom:0">
+            <div>
+                <div class="mdl-mini-footer__left-section">
+                    <ul class="mdl-mini-footer__link-list" style="width: 100%;">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="#" style="margin-left: 1075px;">Este Site não Utiliza Cookies</a></li>
+                    </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
