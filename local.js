@@ -110,7 +110,7 @@ document.getElementById('reg').addEventListener("change", function () {
 
             setTimeout(function() {
                 progressBar.style.visibility = "hidden"
-            }, 100)
+            }, 1000)
             
             
 
